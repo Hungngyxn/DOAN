@@ -6,7 +6,6 @@
         {
             $this->model = new FilterModel();
         }
-        //filter makeup
         public function makeup_category_invoke($name){
                 if(isset($_GET['minmax']))
                     $minmax = $_GET['minmax'];
@@ -23,7 +22,6 @@
             $makeupList= $this->model->getMakeupList($brand);
             include "makeup_category_view.php";
         }
-        //------------------------------------------------------------------------------//
         public function men_fg_category_invoke($name){
             if(isset($_GET['minmax']))
                 $minmax = $_GET['minmax'];
@@ -40,8 +38,7 @@
             $men_fg_List= $this->model->getMen_FragranceList($brand);
             include "men_fg_category_view.php";
         }
-        
-        //-------------------------------------------------------------------------------//
+
         public function women_fg_category_invoke($name){
             if(isset($_GET['minmax']))
                 $minmax = $_GET['minmax'];
