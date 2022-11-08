@@ -4,7 +4,6 @@
     require_once($_SERVER['DOCUMENT_ROOT']."/CONCASAU/DOAN/modules/db_module.php");
 
     class DetailModel{
-        // get product
         public function getProduct($id){
             $link=null;
             taoKetNoi($link);
@@ -20,9 +19,6 @@
             giaiPhongBonho($link, $result); 
             return $product;
         }
-        // get Spec list
-    
-       
         public function getDescription($id){
             $link=null;
             taoKetNoi($link);
