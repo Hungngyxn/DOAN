@@ -5,9 +5,6 @@ require_once($_SERVER['DOCUMENT_ROOT']."/CONCASAU/DOAN/modules/db_module.php");
 
 class UserModel
 {
-    /*---------------------------------Logout---------------------------------*/
-
-
     public function signup()
     {
         if ($this->emptyInputSignup() == false) {
@@ -95,9 +92,6 @@ class UserModel
         return $result;
     }
 
-    /*---------------------------------Login---------------------------------*/
-
-
     public function login()
     {
         if ($this->emptyInput() == false) {
@@ -175,10 +169,6 @@ class UserModel
         return $getuser;
     }
 
-
-    /*---------------------------------Update---------------------------------*/
-
-
     public function updateUser()
     {
         if ($this->emptyUpdate() == false) {
@@ -224,9 +214,6 @@ class UserModel
             return false;
         }
     }
-
-
-    /*---------------------------------Logout---------------------------------*/
 
 
     public function logout()
